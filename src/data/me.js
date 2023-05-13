@@ -1,22 +1,22 @@
 export const me = [
     {
-        path: "https://www.github.com/aldy-san",
-        title: "Github",
+        path: "https://www.facebook.com/groups/578105362225072",
+        title: "Groups",
         icon: ""
     },
     {
-        path: "https://www.twitter.com/ald_iiii",
-        title: "Twitter",
+        path: "https://www.facebook.com/Ider.School",
+        title: "Идэр их сургууль",
         icon: ""
     },
     {
-        path: "https://www.instagram.com/nur.sm_",
-        title: "Instagram",
+        path: "https://www.facebook.com/profile.php?id=100079202028333",
+        title: "Facebook",
         icon: ""
     },
     {
-        path: "http://aldi-maulidi.vercel.app/",
-        title: "Website",
+        path: "https://www.facebook.com/profile.php?id=100053631995468",
+        title: "Facebook",
         icon: ""
     }
 ]
