@@ -14,7 +14,7 @@ const FallingWords = () => {
     const difficulties = [
         {
             id: 0,
-            name: 'Beginner',
+            name: '初心者',
             speed: 3,
             words: {
                 hiragana: all.filter(word => word.expression.length < 4 && isHiragana(word.expression)),
@@ -22,7 +22,7 @@ const FallingWords = () => {
             }
         },{
             id: 1,
-            name: 'Easy',
+            name: '簡単',
             speed: 8,
             words: {
                 hiragana: all.filter(word => word.expression.length < 4 && isHiragana(word.expression)),
@@ -30,7 +30,7 @@ const FallingWords = () => {
             }
         },{
             id: 2,
-            name: 'Medium',
+            name: '中くらい',
             speed: 12,
             words: {
                 hiragana: all.filter(word => word.expression.length < 5 && isHiragana(word.expression) && word.expression.length > 3),
@@ -38,7 +38,7 @@ const FallingWords = () => {
             }
         },{
             id: 3,
-            name: 'Hard',
+            name: '難しい',
             speed: 16,
             words: {
                 hiragana: all.filter(word => word.expression.length > 3 && isHiragana(word.expression)),
@@ -87,7 +87,7 @@ const FallingWords = () => {
         })
         words.forEach(word => {
             if (word.y < game.height - 5) return
-            setCurrentText("You lost!, set difficulty to start game again..")
+            setCurrentText("ここに入力してください。チェックするスペースはあります.")
             changeInputColor('#dc2626')
             setIsStarted(false)
         })
@@ -111,7 +111,7 @@ const FallingWords = () => {
             setWords(words)
         } else {
             changeInputColor('#dc2626')
-            console.log("wrong word")
+            console.log("Буруу үг")
         }
     }
     useInterval(tick, 50)
@@ -131,8 +131,8 @@ const FallingWords = () => {
                         className="bg-gray-200 dark:bg-gray-700 dark:hover:text-white bg-transparent outline-none my-2 mx-4"
                         onChange={e => handleAlphabetChange(e.target.value.toLowerCase())}
                     >
-                        <option key='Hiragana'>Hiragana</option>
-                        <option key='Katakana'>Katakana</option>
+                        <option key='Hiragana'>Хирагана</option>
+                        <option key='Katakana'>Катакана</option>
                     </select>
                 </div>
             </div>
@@ -148,7 +148,7 @@ const FallingWords = () => {
                         }
                     }>
                         <Text
-                            text={`Score: ${score}`}
+                            text={`Оноо: ${score}`}
                             x={10}
                             y={10}
                             style={new TextStyle({
@@ -182,7 +182,7 @@ const FallingWords = () => {
 
                 </div>
                 <input
-                    placeholder="Type here, space to check"
+                    placeholder="Энд бичнэ үү, шалгах зай"
                     className={`outline-none w-full p-2 hover:bg-opacity-70  rounded-lg bg-gray-200 dark:bg-gray-700 text-black dark:text-white dark:placeholder-gray-50`}
                     style={{ backgroundColor: inputColor }}
                     onChange={(e) => handleInput(e)}

@@ -111,7 +111,7 @@ const Typerace = () => {
                     <input className="hidden" onChange={() => handleUseKanji()} type="checkbox" name="useKanji" id="useKanji"/>
                 </label>
             </div>
-            <span className={(!result ? "hidden " : "")+"text-center"}>Congratulations, your score is {lastScore}</span>
+            <span className={(!result ? "hidden " : "")+"text-center"}>おめでとうございます、スコアが決まりました  {lastScore}</span>
         </div>
     )
 }

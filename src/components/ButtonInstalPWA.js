@@ -34,7 +34,7 @@ const ButtonInstallPWA = () => {
             <path stroke="currentColor" d="M12 14.25L12 4.75"/>
             <path stroke="currentColor" d="M8.75 10.75L12 14.25L15.25 10.75"/>
         </svg>
-        <span className="text-lg lg:text-2xl">Install App</span>
+        <span className="text-lg lg:text-2xl">こんにちは</span>
     </button>
   );
 };

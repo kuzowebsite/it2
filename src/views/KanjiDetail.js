@@ -36,7 +36,7 @@ const KanjiDetail = () => {
                     <h1 className="text-7xl lg:text-9xl font-semibold mb-6 lg:mt-8 lg:mb-12 text-center">
                         {kanjiDetail.kanji ? kanjiDetail.kanji : "-"}
                     </h1>
-                    <span>Heisig Keyword
+                    <span>Түлхүүр үг
                         <a href="https://en.wikipedia.org/wiki/Remembering_the_Kanji_and_Remembering_the_Hanzi" className="hover:text-primary hover:cursor-pointer inline-block">
                             <sup>?</sup>
                         </a>
@@ -64,17 +64,17 @@ const KanjiDetail = () => {
                 </div>
                 <div className="flex flex-col w-full lg:p-8 lg:ml-10 text-2xl text-center lg:text-left">
                     <div className="flex flex-col space-y-6 mb-12">
-                        <KanjiListDetail text="Kun - Reading" datas={kanjiDetail.kun_readings}/>
-                        <KanjiListDetail text="On - Reading" datas={kanjiDetail.on_readings}/>
-                        <KanjiListDetail text="Meaning" datas={kanjiDetail.meanings}/>
+                        <KanjiListDetail text="Күн - Дуудлага" datas={kanjiDetail.kun_readings}/>
+                        <KanjiListDetail text="Он - Дуудлага" datas={kanjiDetail.on_readings}/>
+                        <KanjiListDetail text="Утга учир" datas={kanjiDetail.meanings}/>
                     </div>
                 </div>
             </div>
             <div className="flex flex-col">
-                    <h2 className="font-bold mb-2 text-3xl text-center">Words</h2>
+                    <h2 className="font-bold mb-2 text-3xl text-center">Үг</h2>
                     <KanjiWordContainer kanji={kanji} wordsLimit={wordsLimit} sendWordsLength={(wordsLength) => setWordsLength(wordsLength)}/>
                 </div>
-            <button className={((wordsLimit > wordsLength) || wordsLength === 0 ? "hidden " : "")+"transition-colors mt-12 duration-300 mx-auto border-b-2 border-black dark:border-white hover:border-primary dark:hover:border-primary hover:text-primary hover:cursor-pointer"} onClick={() => {setWordsLimit(wordsLimit+5)}}>More Words</button>
+            <button className={((wordsLimit > wordsLength) || wordsLength === 0 ? "hidden " : "")+"transition-colors mt-12 duration-300 mx-auto border-b-2 border-black dark:border-white hover:border-primary dark:hover:border-primary hover:text-primary hover:cursor-pointer"} onClick={() => {setWordsLimit(wordsLimit+5)}}>Илүү олон үг</button>
         </div>
         </>
     )

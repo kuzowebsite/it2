@@ -84,18 +84,18 @@ const DnDGame = () => {
     }
     return(
         <div className="flex flex-col lg:mx-20 py-4 lg:p-4">
-            <h1 className="text-3xl lg:text-4xl font-bold text-center">Pairing Kana</h1>
+            <h1 className="text-3xl lg:text-4xl font-bold text-center">Үсгүүдийг олоод устга</h1>
             <div className={(game ? "hidden" : "flex") + " rounded-xl border-gray-800 dark:border-gray-500 py-12 flex-col mx-auto"}>
-                <span className="text-xl lg:text-3xl text-center font-black mb-3">Setting</span>
+                <span className="text-xl lg:text-3xl text-center font-black mb-3">Тохиргоо</span>
                 <div className="flex space-x-8 py-3 lg:p-8">
                     <div className="flex flex-col space-y-4">
-                        <H2 text="From"/>
+                        <H2 text="Эндээс"/>
                         <CategoryRadioButton name={"from"} value={"Romaji"} checked={from} onSend={(x) => setFrom(x)}/>
                         <CategoryRadioButton name={"from"} value={"Hiragana"} checked={from} onSend={(x) => setFrom(x)}/>
                         <CategoryRadioButton name={"from"} value={"Katakana"} checked={from} onSend={(x) => setFrom(x)}/>
                     </div>
                     <div className="flex flex-col space-y-4">
-                        <H2 text="To"/>
+                        <H2 text="Энэ рүү"/>
                         <CategoryRadioButton name={"to"} value={"Romaji"} checked={to} onSend={(x) => setTo(x)}/>
                         <CategoryRadioButton name={"to"} value={"Hiragana"} checked={to} onSend={(x) => setTo(x)}/>
                         <CategoryRadioButton name={"to"} value={"Katakana"} checked={to} onSend={(x) => setTo(x)}/>
@@ -105,7 +105,7 @@ const DnDGame = () => {
                     <button onClick={() => handleStart()} 
                     className={`flex transition-all delay-75 px-6 py-4 lg:px-8 mt-4 text-lg lg:text-3xl rounded-lg mx-auto bg-gray-200 ${isStartDisabled ? "text-gray-400 dark:text-gray-600" : "text-gray-600 dark:text-gray-100 dark:hover:text-white"} ${!isStartDisabled && "hover:bg-primary hover:text-white"} dark:bg-gray-700 dark:bg-opacity-80 ${!isStartDisabled && "dark:hover:bg-primary"} focus:ring-2 focus:ring-primary ring-offset-4 focus:outline-none dark:ring-offset-gray-800 ${isStartDisabled && "cursor-not-allowed"}`}
                     disabled={isStartDisabled}>
-                        <span className="mr-2">Start Game</span>
+                        <span className="mr-2">Тоглоом эхлэх</span>
                         <div className=" my-auto">
                             <svg  width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" d="M13.75 6.75L19.25 12L13.75 17.25"></path>
@@ -124,10 +124,10 @@ const DnDGame = () => {
                                 <path stroke="currentColor" d="M19.25 12H5"></path>
                             </svg>
                         </div>
-                        <span className="my-auto">Back</span>
+                        <span className="my-auto">Буцах</span>
                     </button>
                     <button onClick={() => handleReset()} className="flex transtion duration-150 text-base bg-gray-200 dark:bg-gray-700 px-5 py-2 lg:px-7 lg:py-3 space-x-2 active:ring-2 focus:outline-none active:ring-primary ring-offset-2 dark:ring-offset-gray-800 bg-opacity-80 hover:bg-opacity-70 dark:hover:bg-opacity-70 rounded-lg">
-                        <span className="my-auto">Reset</span>
+                        <span className="my-auto">Дахин тохируулах</span>
                     </button>
                     <div className="flex space-x-2 bg-green-200 dark:bg-green-600 px-5 py-2 lg:px-7 lg:py-3 rounded-lg  lg:text-lg ml-auto">
                         <div className="my-auto">
