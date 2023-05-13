@@ -6,7 +6,7 @@ import KanjiContainer from '../components/KanjiContainer';
 
 const Kanji = () => {
     const [kanjiList, setKanjiList] = useState([]);
-    const [filter, setFilter] = useState("Зэрэг-1");
+    const [filter, setFilter] = useState("grade-1");
     const [modal, setModal] = useState(false);
     const [checkData, setCheckData] = useState(true);
     useEffect(() => {
