@@ -11,7 +11,7 @@ export const navLinks = [
     {
         path:'/',
         icon:homeIcon,
-        title: "Нүүр    "
+        title: "Home"
     },
     {
         path:'/hiragana',
@@ -31,7 +31,7 @@ export const navLinks = [
     {
         path:'/game',
         icon:gameIcon,
-        title: "Тоглоом",
+        title: "Game",
         type:'dropdown'
     }
 ]
