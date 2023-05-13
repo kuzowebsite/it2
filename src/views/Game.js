@@ -11,13 +11,13 @@ const Kana = () => {
             <H1 span={gameIcon} text={"Game"}/>
             <div className="flex flex-col space-y-6">
                 <div className="flex flex-col space-y-4 mx-8">
-                    <Link to="game/Үсгүүдийг олоод устга" className="text-gray-600 dark:text-gray-300 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-xl py-3 w-full rounded-lg cursor-pointer">
+                    <Link to="game/pairing-kana" className="text-gray-600 dark:text-gray-300 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-xl py-3 w-full rounded-lg cursor-pointer">
                         <span>Үсгүүдийг олоод устга</span>
                     </Link>
-                    <Link to="game/Бичгийн машин" className="text-gray-600 dark:text-gray-300 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-xl py-3 w-full rounded-lg cursor-pointer">
+                    <Link to="game/typerace" className="text-gray-600 dark:text-gray-300 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-xl py-3 w-full rounded-lg cursor-pointer">
                         <span>Бичгийн машин</span>
                     </Link>
-                    <Link to="game/Унах үгс" className="text-gray-600 dark:text-gray-300 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-xl py-3 w-full rounded-lg cursor-pointer">
+                    <Link to="game/fallingWords" className="text-gray-600 dark:text-gray-300 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-xl py-3 w-full rounded-lg cursor-pointer">
                         <span>Унах үгс</span>
                     </Link>
                     {/* <li className="text-gray-600 dark:text-gray-300 bg-gray-200  dark:bg-gray-900  text-xl mx-auto py-3 px-6 rounded-full ">
