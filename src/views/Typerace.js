@@ -101,13 +101,13 @@ const Typerace = () => {
                 <span className="text-primary text-base capitalize">{meaning}</span>
             </div>
             <div className="flex flex-col lg:flex-row mx-auto space-y-6 lg:space-y-0 lg:space-x-2">
-                <input onChange={(e) => handleChange(e)} ref={node => (input = node)} autoComplete="off" disabled={result === true ? true : false} className="mx-auto transition-all duration-150 border-2 border-gray-200 dark:border-gray-500 focus:border-primary dark:focus:border-primary px-5 py-2 rounded-lg focus:outline-none dark:bg-gray-700 text-center" type="text" name="inputWord" id="inputWord" placeholder={result ? "Please Reset" :"Type the answer"}/>
-                <button className=" mx-auto bg-primary hover:bg-opacity-70 bg-opacity-80 text-white focus:outline-none active:ring-2 active:ring-primary px-5 py-3 rounded-lg ring-offset-2 dark:ring-offset-gray-800" onClick={() => handlePass()}>Pass</button>
+                <input onChange={(e) => handleChange(e)} ref={node => (input = node)} autoComplete="off" disabled={result === true ? true : false} className="mx-auto transition-all duration-150 border-2 border-gray-200 dark:border-gray-500 focus:border-primary dark:focus:border-primary px-5 py-2 rounded-lg focus:outline-none dark:bg-gray-700 text-center" type="text" name="inputWord" id="inputWord" placeholder={result ? "Дахин тохируулна уу" :"Хариултыг бичнэ үү"}/>
+                <button className=" mx-auto bg-primary hover:bg-opacity-70 bg-opacity-80 text-white focus:outline-none active:ring-2 active:ring-primary px-5 py-3 rounded-lg ring-offset-2 dark:ring-offset-gray-800" onClick={() => handlePass()}>Дамжуулах</button>
             </div>
             <div className="flex mx-auto space-x-2">
-                <button className="mx-auto bg-gray-200 dark:bg-gray-700 active:ring-2 active:ring-primary ring-offset-2  dark:hover:text-white bg-opacity-80 hover:bg-opacity-70 dark:hover:bg-opacity-70 focus:outline-none px-5 py-3 rounded-lg cursor-pointer dark:ring-offset-gray-800" onClick={() => handleReset()}>Reset</button>
+                <button className="mx-auto bg-gray-200 dark:bg-gray-700 active:ring-2 active:ring-primary ring-offset-2  dark:hover:text-white bg-opacity-80 hover:bg-opacity-70 dark:hover:bg-opacity-70 focus:outline-none px-5 py-3 rounded-lg cursor-pointer dark:ring-offset-gray-800" onClick={() => handleReset()}>Дахин тохируулах</button>
                 <label  htmlFor="useKanji" className={(useKanji ? "bg-blue-400 dark:bg-blue-700 text-white" : "bg-gray-200 dark:bg-gray-700")+" flex mx-auto hover:bg-opacity-80 dark:hover:bg-opacity-80 px-5 py-3 rounded-lg cursor-pointer focus-within:ring-2 focus-within:ring-primary"}>
-                    <span>Kanji</span>
+                    <span>Ханз</span>
                     <input className="hidden" onChange={() => handleUseKanji()} type="checkbox" name="useKanji" id="useKanji"/>
                 </label>
             </div>
