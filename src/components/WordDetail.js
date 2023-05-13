@@ -51,7 +51,7 @@ const WordDetail = (props) =>{
                     }
                 </div>
                 <div className="flex flex-col">
-                    <span className={(props.data.japanese.length > 1 ? "" : "hidden ")+"flex dark:text-gray-200 text-sm my-2"}>Other forms</span>
+                    <span className={(props.data.japanese.length > 1 ? "" : "hidden ")+"flex dark:text-gray-200 text-sm my-2"}>Бусад хэлбэрүүд</span>
                     <div className="flex flex-wrap gap-2">
                         {
                             props.data.japanese.slice(1).map((jpn, idx) => {

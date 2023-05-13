@@ -6,7 +6,7 @@ import KanjiContainer from '../components/KanjiContainer';
 
 const Kanji = () => {
     const [kanjiList, setKanjiList] = useState([]);
-    const [filter, setFilter] = useState("grade-1");
+    const [filter, setFilter] = useState("Зэрэг-1");
     const [modal, setModal] = useState(false);
     const [checkData, setCheckData] = useState(true);
     useEffect(() => {
@@ -35,9 +35,9 @@ const Kanji = () => {
                     {/* Modal */}
                     <div className="relative lg:ml-2 my-auto">
                         {/* Button */}
-                        <span className="text-sm pb-3 pl-1 pt-0 text-left capitalize block">{'Filter: Searched "'+filter+'"'}</span>
+                        <span className="text-sm pb-3 pl-1 pt-0 text-left capitalize block">{'Шүүлтүүр: "'+filter+'"'}</span>
                         <button onClick={() => {setModal(!modal)}} className="flex bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg shadow hover:bg-gray-100 text-lg px-4 py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary ring-offset-4 dark:ring-offset-gray-800">
-                            <span className="text-base">Grade</span>
+                            <span className="text-base">Зэрэг</span>
                             <svg className={"transform scale-50 ml-2 my-auto "+(!modal ? "rotate-0" : "-rotate-90")} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path stroke="currentColor" d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
                             </svg>
@@ -45,13 +45,13 @@ const Kanji = () => {
                         {/* Modal */}
                         <div className={(modal ? "flex" : "hidden")+" absolute left-32 top-8 rounded-lg w-32 bg-white shadow-lg dark:bg-gray-700 flex-col ml-auto px-3 py-3 z-10"}>
                             <div className="flex flex-col space-y-2">
-                                <CategoryFilterButton category="grade-1" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="grade-2" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="grade-3" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="grade-4" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="grade-5" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="grade-6" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="grade-8" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="Зэрэг-1" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="Зэрэг-2" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="Зэрэг-3" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="Зэрэг-4" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="Зэрэг-5" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="Зэрэг-6" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="Зэрэг-8" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
                                 {/* <RadioInput category="joyo" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
                                 <RadioInput category="jinmeiyo" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/> */}
                             </div>
