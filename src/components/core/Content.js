@@ -26,7 +26,7 @@ const Content = () => {
         <>
             <HelmetProvider>
                 <Helmet>
-                    <title>{GetTitle() + " - Tanoshi Nihongo"}</title>
+                    <title>{GetTitle() + " - tanoshinihongo"}</title>
                     <link rel="icon" href={logoIconWhite} />
                 </Helmet>
             </HelmetProvider>
