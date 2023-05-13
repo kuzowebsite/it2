@@ -45,13 +45,13 @@ const Kanji = () => {
                         {/* Modal */}
                         <div className={(modal ? "flex" : "hidden")+" absolute left-32 top-8 rounded-lg w-32 bg-white shadow-lg dark:bg-gray-700 flex-col ml-auto px-3 py-3 z-10"}>
                             <div className="flex flex-col space-y-2">
-                                <CategoryFilterButton category="Зэрэг-1" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="Зэрэг-2" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="Зэрэг-3" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="Зэрэг-4" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="Зэрэг-5" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="Зэрэг-6" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
-                                <CategoryFilterButton category="Зэрэг-8" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="grade-1" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="grade-2" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="grade-3" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="grade-4" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="grade-5" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="grade-6" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
+                                <CategoryFilterButton category="grade-8" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
                                 {/* <RadioInput category="joyo" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/>
                                 <RadioInput category="jinmeiyo" checked={filter} onSend={(theFilter) => changeFilter(theFilter)}/> */}
                             </div>
