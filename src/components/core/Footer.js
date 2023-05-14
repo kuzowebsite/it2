@@ -28,14 +28,14 @@ const Footer = () => {
             </div>
             <div className="flex flex-col lg:flex-row text-center lg:text-left text-sm space-y-4 lg:space-y-0 mb-32 mt-6 mx-8 lg:mb-0 lg:mx-44">
                 <span className="">
-                    <span>愛している 🧡 ありがとう.</span>
-                    <a className="hover:text-primary border-dashed border-b-2 border-gray-900 dark:border-gray-50 hover:border-primary dark:hover:border-primary" href="https://www.animedex.live/" target="_blank" rel="noreferrer">Animeak</a> 
+                    <span>愛している ありがとう.</span>
+                    <a className="hover:text-primary border-dashed border-b-2 border-gray-900 dark:border-gray-50 hover:border-primary dark:hover:border-primary" href="https://www.animedex.live/" target="_blank" rel="noreferrer"> 🧡 🧡</a> 
                 </span>
                 <span className="lg:ml-auto">
                     <span>Амжилт </span>
-                    <a className="hover:text-primary border-dashed border-b-2 border-gray-900 dark:border-gray-50 hover:border-primary dark:hover:border-primary" href="https://kanjiapi.dev/" target="_blank" rel="noreferrer">,</a> 
+                    <a className="hover:text-primary border-dashed border-b-2 border-gray-900 dark:border-gray-50 hover:border-primary dark:hover:border-primary" href="https://kanjiapi.dev/" target="_blank" rel="noreferrer">🧡</a> 
                     <span> Хичээгээрэй </span>
-                    <a className="hover:text-primary border-dashed border-b-2 border-gray-900 dark:border-gray-50 hover:border-primary dark:hover:border-primary" href="https://jisho.org/forum/54fefc1f6e73340b1f160000-is-there-any-kind-of-search-api" target="_blank" rel="noreferrer">.</a>
+                    <a className="hover:text-primary border-dashed border-b-2 border-gray-900 dark:border-gray-50 hover:border-primary dark:hover:border-primary" href="https://jisho.org/forum/54fefc1f6e73340b1f160000-is-there-any-kind-of-search-api" target="_blank" rel="noreferrer">🧡</a>
                 </span>
             </div>
         </footer>
