@@ -15,8 +15,8 @@ export const socialMedia = [
         icon: ""
     },
     {
-        path: "https://discord.gg/JEKGHRKxzs",
-        title: "Discord",
+        path: "https://kanamoji.vercel.app",
+        title: "Test",
         icon: ""
     }
 ]
