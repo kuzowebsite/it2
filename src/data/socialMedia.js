@@ -1,7 +1,7 @@
 export const socialMedia = [
     {
-        path: "https://www.twitter.com",
-        title: "Twitter",
+        path: "https://www.tiktok.com/",
+        title: "TikTok",
         icon: ""
     },
     {
