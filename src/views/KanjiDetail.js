@@ -45,7 +45,7 @@ const KanjiDetail = () => {
                     <table className="table-auto text-left">
                         <thead>
                             <tr>
-                                <th>Grade</th>
+                                <th>Зэрэг</th>
                                 <th>:</th>
                                 <th className="font-normal">{kanjiDetail.grade ? kanjiDetail.grade : "-"}</th>
                             </tr>
