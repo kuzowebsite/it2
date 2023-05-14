@@ -36,7 +36,7 @@ const Home = () => {
                             <ul className="list-disc list-inside space-y-1">
                                 <li>2023 年にアイダー大学のソフトウェア エンジニアリングの 2 年生が、 <Link className="border-dashed border-b-2 border-current hover:text-primary hover:border-primary" to='/search?words="food"'>,</Link></li>
                                 <li>学んだことと彼自身の研究に基づいてこの Web サイトを作成しました。 <Link className="border-dashed border-b-2 border-current hover:text-primary hover:border-primary" to="/search?words=ai">,</Link></li>
-                                <li>このサイトは Polyshop と呼ばれ、 <Link className="border-dashed border-b-2 border-current hover:text-primary hover:border-primary" to="/search?words=あお">,</Link></li>
+                                <li>このサイトは Polish up と呼ばれ、 <Link className="border-dashed border-b-2 border-current hover:text-primary hover:border-primary" to="/search?words=あお">,</Link></li>
                                 <li>すべてのクラスが学んだ内容に基づいて、 <Link className="border-dashed border-b-2 border-current hover:text-primary hover:border-primary" to="/search?words=犬">,</Link></li>
                                 <li>レッスンの最後に知識とスキルのコンテストが行​​われます。 <Link className="border-dashed border-b-2 border-current hover:text-primary hover:border-primary" to="/search?words=%23jlpt-n3 %23adjective">,</Link></li>
                             </ul>
